@@ -110,3 +110,70 @@ nav ul li a:hover, nav ul li a.active{
     background-size: cover;
     background-repeat: no-repeat;
  }
+
+
+
+/* Second Section Start Here */
+
+#first-section{
+    background-color: #1b1b49;
+    height: 70vh;
+}
+
+#Services-parent{
+    width: 1200px;
+    margin:  auto;
+    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+
+.single-service{
+    background-color: white;
+    padding: 20px 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.single-service i {
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+
+.single-service h2{
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+.services-logo{
+    color: white;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Second Section Media Query code Start Here */
+
+@media only screen and (max-width: 688px) {
+
+    #Services-parent{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 10px;
+        width: 100%;
+
+    }
+    
+}
+
+@media only screen and (min-width: 689px) and (max-width:1099px) {
+     #Services-parent{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 20px;
+        width: 100%; 
+     }
+}
